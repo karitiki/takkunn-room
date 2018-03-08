@@ -1,0 +1,47 @@
+/*------------indexのメインスタイルなど-----------*/
+
+.rightside{
+  position: absolute;
+ top: 30px;
+ width: 300px;
+ right: 10px;
+}
+
+p{
+  font-size: 25px;
+  line-height: 1px;
+}
+
+/*-----------------ヘッダーの設定-----------------*/
+ul, ol{
+  padding: 0;
+  width: 295px;
+}
+
+ul li {
+  position: relative;
+  list-style-type: none!important;/*ポチ消す*/
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  background: #dbebf8;
+  vertical-align: middle;
+  color: #505050;
+  border-radius: 15px 15px 15px 15px;/*角丸く*/
+}
+
+ul li a{
+  color: skyblue;
+  font-size:30px;
+  text-decoration:none /*リンクの下線を消す*/
+}
+
+ul li a:hover{
+  color: skyblue;
+  font-size: 2.5em;/*文字サイズ2倍*/
+  font-weight: bold
+}
+
+a.mainlogo:hover img{
+  border: solid 2px silver
+}
