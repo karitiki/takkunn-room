@@ -1,0 +1,4 @@
+.test{
+  -webkit-flex-basis: auto | 350px; /* Safari */
+  flex-basis:         auto | auto;
+}

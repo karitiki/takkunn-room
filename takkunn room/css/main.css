@@ -1,25 +1,73 @@
-/*------------indexのメインスタイルなど-----------*/
+body {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
 
-.rightside{
-  position: absolute;
- top: 30px;
- width: 300px;
- right: 10px;
+h1{
+  font-size: calc(10px + 0.5vw);
 }
 
 p{
-  font-size: 25px;
-  line-height: 1px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-size: calc(25px + 0.5vw);
+
 }
 
-/*-----------------ヘッダーの設定-----------------*/
-ul, ol{
-  padding: 0;
-  width: 295px;
+/*------------Viewport---------*/
+a img{
+  display: inline-block;
+  margin: auto;
+  width: 40vh; /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
+  min-width: 280px;
+  min-height: 50px;
 }
 
-ul li {
-  position: relative;
+/*---------------メインロゴの設定-----------------*/
+a.mainlogo img{
+  border:double 10px skyblue;
+  transition:all 0.5s ease; /*0.5秒かけて要素を変化させる*/
+}
+
+a.mainlogo:hover img{
+  border:double 10px #fff;
+}
+a.mainlogo:hover img{
+
+}
+
+/*------------indexのメインスタイルなど-----------*/
+.center iframe{
+  display: inline-block;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  min-width: 280px;
+  min-height: 300px;
+}
+/*------------------右側の設定--------------------*/
+.rightside {
+  font-size: 30px;
+  list-style-type: none!important;
+}
+
+.rightside li{
+  width: 20vw;
+  height: 30vh;
+  min-width: 280px;
+  min-height: 300px;
+border: dotted 3px #000;
+}
+
+.rightside li p{
+  font-size: 18px;
+  margin: auto 0;
+}
+
+.header ul li {
   list-style-type: none!important;/*ポチ消す*/
   padding: 0.5em 0.5em 0.5em 0.5em;
   margin-bottom: 5px;
@@ -28,20 +76,25 @@ ul li {
   vertical-align: middle;
   color: #505050;
   border-radius: 15px 15px 15px 15px;/*角丸く*/
+  transition: 1.0s ;
+}
+.header ul li:hover {
+  background-color: #fff;
 }
 
-ul li a{
+.header ul{
+  padding: 0;
+  width: 295px;
+}
+.header ul li a{
+  display: block;
   color: skyblue;
   font-size:30px;
   text-decoration:none /*リンクの下線を消す*/
 }
 
-ul li a:hover{
-  color: skyblue;
-  font-size: 2.5em;/*文字サイズ2倍*/
-  font-weight: bold
-}
 
-a.mainlogo:hover img{
-  border: solid 2px silver
+.header ul, ol{
+  padding: 0;
+  width: auto;
 }

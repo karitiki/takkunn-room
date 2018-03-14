@@ -1,0 +1,22 @@
+body {
+  display: -webkit-flex;
+   display: flex;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.column:first-child{
+  order:2;
+}
+.column:nth-child(2){
+  order:3;
+}
+.column:last-child{
+   order:1;
+}
+
+#flex-item1{
+  -webkit-flex-shrink:0; /* Safari */
+  flex-shrink:0;
+}

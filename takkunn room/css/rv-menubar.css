@@ -1,0 +1,53 @@
+a{
+  text-decoration:none; /*リンクの下線を消す*/
+}
+ul{
+    list-style-type: none!important;/*ポチ消す*/
+}
+
+/*-----------枠線部分----------*/
+.menubar ul{
+  padding: 0;
+  width: 350px;
+}
+
+.menubar ul li{
+  line-height: 1.5;
+  display: inline-block;
+  width: 40%;
+}
+.menubar ul li a{
+  color: skyblue;
+  font-size:28px;
+  padding-left: 0.2em;
+  border-left: solid 5px skyblue;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all  0.5s ease;
+}
+.menubar ul li a:hover{
+  color: #fff;
+  background-color: skyblue;
+}
+/*-------------あかさたなの設定-----------*/
+.underbar ul li p{
+  padding: 0.5em 1em;
+      margin: 2em 0;
+      background: #fff8e8;
+      border-left: solid 10px skyblue;
+
+}
+.underbar ul{
+  padding: 0;
+  width: 500;
+}
+
+
+/*--------------------作品名------------------------*/
+.underbar ul li a{
+  font-size: calc(112.5% + 0.5vw);
+}
+.underbar ul li a:hover{
+
+}
