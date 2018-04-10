@@ -1,20 +1,16 @@
-body {
+
+html{
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
          -o-box-sizing: border-box;
         -ms-box-sizing: border-box;
             box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+          	-ms-text-size-adjust: 100%;
 }
 
 h1{
   font-size: calc(10px + 0.5vw);
-}
-
-p{
-  margin-top: 8px;
-  margin-bottom: 2px;
-  font-size: calc(25px + 0.5vw);
-
 }
 
 /*------------Viewport---------*/
@@ -22,49 +18,65 @@ a img{
   display: inline-block;
   margin: auto;
   width: 40vh; /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
-  min-width: 280px;
+  min-width: 120px;
   min-height: 50px;
 }
 
-/*---------------メインロゴの設定-----------------*/
-a.mainlogo img{
-  border:double 10px skyblue;
-  transition:all 0.5s ease; /*0.5秒かけて要素を変化させる*/
-}
-
-a.mainlogo:hover img{
-  border:double 10px #fff;
-}
-a.mainlogo:hover img{
-
+div{
+  padding-left: 2vw;
 }
 
 /*------------indexのメインスタイルなど-----------*/
 .center iframe{
   display: inline-block;
-  margin: auto;
-  width: 50vw;
+  border: solid 1px #000;
+  width: 45vw;
   height: 50vh;
-  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 270px;
   min-height: 300px;
+}
+
+.center p{
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-size: calc(25px + 0.5vw);
 }
 /*------------------右側の設定--------------------*/
-.rightside {
+
+.rightside p{
   font-size: 30px;
-  list-style-type: none!important;
+  margin-right: 2vw;
 }
 
-.rightside li{
+.rightside ul{
+  margin-right: 1.0em;
   width: 20vw;
   height: 30vh;
-  min-width: 280px;
+  min-width: 270px;
   min-height: 300px;
-border: dotted 3px #000;
+  border: dotted 3px #000;
 }
 
-.rightside li p{
-  font-size: 18px;
-  margin: auto 0;
+.rightside ul li p{
+  font-size: 19px;
+  margin-top: 0.5em;
+}
+
+.rightside ul li{
+  list-style-type: none!important;/*ポチ消す*/
+}
+
+.rightside a img{
+  min-width: 270px;
+
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+/*------------------左側の設定--------------------*/
+
+.header{
 }
 
 .header ul li {
@@ -78,6 +90,7 @@ border: dotted 3px #000;
   border-radius: 15px 15px 15px 15px;/*角丸く*/
   transition: 1.0s ;
 }
+
 .header ul li:hover {
   background-color: #fff;
 }
@@ -86,6 +99,7 @@ border: dotted 3px #000;
   padding: 0;
   width: 295px;
 }
+
 .header ul li a{
   display: block;
   color: skyblue;
@@ -93,8 +107,35 @@ border: dotted 3px #000;
   text-decoration:none /*リンクの下線を消す*/
 }
 
-
 .header ul, ol{
   padding: 0;
   width: auto;
+}
+
+/*---------------メインロゴの設定-----------------*/
+a.mainlogo img{
+  min-width: 270px;
+  border:double 10px skyblue;
+  transition:all 0.5s ease; /*0.5秒かけて要素を変化させる*/
+  margin-bottom: 0.5em;
+}
+
+a.mainlogo:hover img{
+  border:double 10px #fff;
+}
+a.mainlogo:hover img{
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+	body {
+    position: relative;
+	}
+  .all-style{
+    top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+  }
 }
