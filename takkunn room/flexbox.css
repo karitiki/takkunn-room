@@ -1,0 +1,15 @@
+body {
+  display: -webkit-flex;
+   display: flex;
+   -webkit-justify-content: center;
+   justify-content: space-around;
+}
+.column:first-child{
+  order:2;
+}
+.column:nth-child(2){
+  order:3;
+}
+.column:last-child{
+   order:1;
+}
