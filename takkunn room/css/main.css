@@ -22,11 +22,19 @@ a img{
   min-height: 50px;
 }
 
-div{
-  padding-left: 2vw;
-}
+
+@media screen and (min-width: 1200px){
+
+  body{
+    display: -webkit-flex;
+    display: flex;
+  }
 
 /*------------indexのメインスタイルなど-----------*/
+.center{
+  margin-right: 20px;
+}
+
 .center iframe{
   display: inline-block;
   border: solid 1px #000;
@@ -36,6 +44,8 @@ div{
   margin-right: auto;
   min-width: 270px;
   min-height: 300px;
+  margin: 0 10px;
+
 }
 
 .center p{
@@ -44,6 +54,9 @@ div{
   font-size: calc(25px + 0.5vw);
 }
 /*------------------右側の設定--------------------*/
+.rightside{
+  margin-right: 10px;
+}
 
 .rightside p{
   font-size: 30px;
@@ -77,6 +90,8 @@ div{
 /*------------------左側の設定--------------------*/
 
 .header{
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .header ul li {
@@ -123,19 +138,5 @@ a.mainlogo img{
 a.mainlogo:hover img{
   border:double 10px #fff;
 }
-a.mainlogo:hover img{
 
-}
-
-@media screen and (min-width: 280px) and (max-width: 600px) {
-	body {
-    position: relative;
-	}
-  .all-style{
-    top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin: auto;
-  }
 }
