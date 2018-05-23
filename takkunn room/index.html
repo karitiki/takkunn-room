@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="ja">
+
     <head>
         <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,85 @@
         <link rel="stylesheet" href="css/HTML5-reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/flexbox.css">
-          <link rel="stylesheet" href="css/phone.css">
+        <link rel="stylesheet" href="css/phone.css">
+        <link rel="stylesheet" href="css/rv-menubar.css">
     </head>
 
-  <body background="img/spiration-light.png">
-  <nav>
-  <div id="flex-item1" class="header column all-style">
-      <a href="index.html" class="mainlogo"><img src="img/logo.png" alt="mainlogo"></a>
-    <ul>
-      <li>
-        <a href="index.html">
-          TOP
-        </a>
-      </li>
-      <li>
-        <a href="profile.html">
-          プロフィール
-        </a>
-      </li>
-      <li>
-        <a href="links.html">
-          Links
-        </a>
-      </li>
-   </ul>
- </div>
-</nav>
 
-<div id="id2" class="rightside column all-style">
+    <header>
+         <nav class="column">
+            <ul>
+              <li>
+                <a href="index.html">
+                  TOP
+                </a>
+              </li>
+              <li>
+                <a href="profile.html">
+                  プロフィール
+                </a>
+              </li>
+              <li>
+                <a href="links.html">
+                  Links
+                </a>
+              </li>
+           </ul>
+        </nav>
+      </header>
+
+<body>
+<div class="continer ">
+
+<div id="id1" class="leftside column all-style">
   <p>What's New</p>
   <ul>
     <li>
       <p>18/03/09 初めてのHTML</p>
     </li>
   </ul>
-   <a href="http://laplacian.jp/radio/" target="_blank"><img src="http://laplacian.jp/radio/img/special/download/tsubaki-380x120.jpg" width="380" height="120" alt="laplacian『未来ラジオと人工鳩』応援中！" border="0" /></a>
+
 </div>
 
-<div id="id3" class="center column all-style">
-    <p>レビュー一覧</p>
-  <iframe src="review.html"></ifream>
+<div id="id2" class="center column all-style">
+  <p>レビュー一覧</p>
+  <div class="menubar">
+      <ul>
+         <li><a href="review.html">ゲーム</a></li>
+          <li><a href="douzinshi.html">同人誌</a></li>
+      </ul>
+      <hr></hr>
+  </div>
+
+  <div class="underbar">
+    <ul>
+      <li><p>< あ ></p></li>
+      <li><p>< か ></p></li>
+      <li><a target="_parent" href="eroge/kimiyume.html">キミトユメミシ</a></li>
+      <li><p>< さ ></p></li>
+      <li><p>< た ></p></li>
+      <li><p>< な ></p></li>
+      <li><p>< は ></p></li>
+      <li><p>< ま ></p></li>
+      <li><p>< ら ></p></li>
+      <li><p>< や ></p></li>
+      <li><p>< わ ></p></li>
+    </ul>
+  </div>
+ </div>
+
+<div id="id3" class="rightside column all-style">
+  <p>気になっているゲーム</p>
+  <ul>
+    <li>
+      <a>ノラと皇女と野良猫ハート</a>
+    </li>
+    <li>
+      <a>ノラと皇女と野良猫ハート</a>
+    </li>
+  </ul>
 </div>
 
+</div>
   </body>
 </html>
