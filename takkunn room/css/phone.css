@@ -1,22 +1,56 @@
 
-@media screen and (max-width: 1199px){
-body{
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 
+@media screen and (max-width: 1079px){
+
+nav ul li{
+  width: 60vw;
+  min-width: 270px;
+  border-top: solid 2px skyblue;
+  border-bottom: solid 2px skyblue;
+  text-align: center;
+  margin: 10px;
+   display: block;
+   padding: 15px;
+}
+
+nav ul li a{
+  font-size: 20px;
+  letter-spacing: 0.5em;
+  display: block;
+  color: skyblue;
+  text-decoration: none;
+}
+
+nav ul li:hover{
+  color: #fff;
+  transition: 0.2s;
+   background-color: #1c92d2;
+}
+
+nav ul li a:hover{
+  transition: 0.2s;
+    color: #fff;
 }
 
 
-/*------------indexのメインスタイルなど-----------*/
-.center iframe{
 
-  border: solid 1px #000;
+/*------------indexのメインスタイルなど-----------*/
+
+  body {
+    display: -webkit-flex;
+     display: flex;
+     -webkit-justify-content: center;
+     justify-content: space-around;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: center;
+  }
+
+.center{
+
   width: 45vw;
   height: 50vh;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 270px;
+  min-width: 250px;
   min-height: 300px;
 }
 
@@ -25,84 +59,83 @@ body{
   margin-bottom: 2px;
   font-size: calc(25px + 0.5vw);
 }
-/*------------------右側の設定--------------------*/
+/*------------indexのメインスタイルなど-----------*/
+.continer{
 
-.rightside p{
+}
+/*--------------中央の部分-----------------------*/
+.center p{
+  color: #0ED2F7;
+  margin-bottom: 5px;
+  font-size: calc(25px + 0.5vw);
+}
+/*------------------右側の設定--------------------*/
+.leftside{
+
+}
+
+.leftside p{
+  color: #0ED2F7;
   font-size: 30px;
   margin-right: 2vw;
 }
 
-.rightside ul{
-  margin-right: 1.0em;
+.leftside ul{
   width: 45vw;
   height: 30vh;
   min-width: 270px;
   min-height: 300px;
-  border: dotted 3px #000;
+  border: dotted 3px #0ED2F7;
 }
 
-.rightside ul li p{
+.leftside ul li p{
   font-size: 19px;
+  color: #0ED2F7;
   margin-top: 0.5em;
 }
 
-.rightside ul li{
+.leftside ul li{
   list-style-type: none!important;/*ポチ消す*/
 }
 
-.rightside a img{
+.leftside a img{
   min-width: 270px;
-
   padding-top: 0.5em;
   padding-right: 0.5em;
 }
+/*------------------右側の設定--------------------*/
+.rightside{
+
+  }
+
+.rightside p{
+  font-size: 25px;
+  color: #0ED2F7;
+  margin-bottom: 20px;
+}
+
+.rightside ul{
+  width: 18vw;
+  height: 30vh;
+  border: solid 1px #0ED2F7;
+}
+
+.rightside ul li{
+  padding: 0.5em;
+}
+
+.rightside ul li a{
+  font-size: 18px;
+  color: #0ED2F7;
+}
+
+/*------------------ロゴ------------------*/
+
+
+/*------------------ロゴ------------------*/
 /*------------------左側の設定--------------------*/
-
-.header{
-  width: 45vw;
-  min-width: 300px;
-}
-
-.header ul li {
-  list-style-type: none!important;/*ポチ消す*/
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  margin-bottom: 5px;
-  line-height: 1.5;
-  background: #dbebf8;
-  vertical-align: middle;
-  color: #505050;
-  border-radius: 15px 15px 15px 15px;/*角丸く*/
-  transition: 1.0s ;
-}
-
-.header ul li:hover {
-  background-color: #fff;
-}
-
-.header ul{
-  padding: 0;
-  width: auto;
-}
-
-.header ul li a{
-  display: block;
-  color: skyblue;
-  font-size:30px;
-  text-decoration:none /*リンクの下線を消す*/
-}
-
 
 
 /*---------------メインロゴの設定-----------------*/
-a.mainlogo img{
-  width: 45vw;
-  min-width: 300px;
-  border:double 10px skyblue;
-  margin-bottom: 0.5em;
-}
-
-a.mainlogo:hover img{
-  border:double 10px #fff;
-}
 
 }

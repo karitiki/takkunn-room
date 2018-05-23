@@ -1,0 +1,8 @@
+.profile h1{
+
+  font-size: ;
+color: #505050;
+padding: 0.5em 0;/*上下の余白*/
+border-top: solid 3px #505050;/*上線*/
+border-bottom: solid 3px #505050;/*下線*/
+}

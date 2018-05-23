@@ -1,4 +1,15 @@
 
+/*ラベル、ラジオボタンを使っての実装メモ
+
+<input type="radio" id="a">
+<input type="radio" id="b">
+
+
+<label for "a"> </label>
+<label for "b"> </label>
+*/
+
+
 html{
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -9,134 +20,152 @@ html{
           	-ms-text-size-adjust: 100%;
 }
 
-h1{
-  font-size: calc(10px + 0.5vw);
+body{
+ background: : #000000;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 
 /*------------Viewport---------*/
 a img{
-  display: inline-block;
   margin: auto;
-  width: 40vh; /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
+  width: 20vw; /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
   min-width: 120px;
   min-height: 50px;
 }
 
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1080px){
 
-  body{
-    display: -webkit-flex;
-    display: flex;
+  nav{
+      width: 100%;
+      height: 40px;
+      border-top: 1px solid skyblue;
+      border-bottom: 1px solid skyblue;
+      overflow: hidden;
+
+  }
+  nav ul{
+      width: 80%; /*横幅の指定*/
+      margin-left: 20%;   /*左端から20%右側に動かす*/
   }
 
-/*------------indexのメインスタイルなど-----------*/
-.center{
-  margin-right: 20px;
+  nav li{
+      justify-content: center;
+      width: calc(25% - 2px); /*横幅の指定（線の分をマイナスする）*/
+      min-width: 65px;
+      border-left: 1px solid skyblue;  /*線を描く*/
+      text-align: center; /*文字を中央に*/
+
+      float: left;    /*左から並べる*/
+  }
+  nav li:last-child{
+      border-right: 1px solid skyblue;
+  }
+
+  nav ul li:hover{
+        transition: 0.5s;
+        background-color: #1c92d2;
+  }
+  /*radial-gradient(#1c92d2, #f2fcfe);*/
+
+  nav ul li a{
+    color: #0ED2F7;
+  }
+
+  nav ul li a{
+      display:　block;
+      text-decoration: none;
+      font-size: 110%;
+      letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+      font-weight: 40px;   /*文字の太さを調整*/
+      line-height: 40px;  /*行間の指定（ナビボタンの高さ指定）*/
+  }
+
+  nav ul li a:hover{
+      transition: 0.5s;   /*ホバー時の動きをなめらかにする*/
+      color: #fff;    /*文字色の変更*/
+  }
+
 }
+@media screen and (min-width: 1080px){
 
-.center iframe{
-  display: inline-block;
-  border: solid 1px #000;
-  width: 45vw;
-  height: 50vh;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 270px;
-  min-height: 300px;
-  margin: 0 10px;
 
+/*------------indexのメインスタイルなど-----------*/
+.continer{
+  display: flex;
+  margin-top: 20px;
+}
+/*--------------中央の部分-----------------------*/
+.center{
+  margin-left: 4vw;
 }
 
 .center p{
-  margin-top: 8px;
-  margin-bottom: 2px;
+  color: #0ED2F7;
+  margin-bottom: 5px;
   font-size: calc(25px + 0.5vw);
 }
 /*------------------右側の設定--------------------*/
-.rightside{
-  margin-right: 10px;
+.leftside{
+  margin-left: 40px;
 }
 
-.rightside p{
+.leftside p{
+  color: #0ED2F7;
   font-size: 30px;
   margin-right: 2vw;
 }
 
-.rightside ul{
-  margin-right: 1.0em;
+.leftside ul{
   width: 20vw;
   height: 30vh;
   min-width: 270px;
   min-height: 300px;
-  border: dotted 3px #000;
+  border: dotted 3px #0ED2F7;
 }
 
-.rightside ul li p{
+.leftside ul li p{
   font-size: 19px;
+  color: #0ED2F7;
   margin-top: 0.5em;
 }
 
-.rightside ul li{
+.leftside ul li{
   list-style-type: none!important;/*ポチ消す*/
 }
 
-.rightside a img{
+.leftside a img{
   min-width: 270px;
 
   padding-top: 0.5em;
   padding-right: 0.5em;
 }
-/*------------------左側の設定--------------------*/
-
-.header{
-  margin-left: 10px;
-  margin-right: 20px;
+/*------------------右側の設定--------------------*/
+.rightside{
+    margin-left: 30px;
 }
 
-.header ul li {
-  list-style-type: none!important;/*ポチ消す*/
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  margin-bottom: 5px;
-  line-height: 1.5;
-  background: #dbebf8;
-  vertical-align: middle;
-  color: #505050;
-  border-radius: 15px 15px 15px 15px;/*角丸く*/
-  transition: 1.0s ;
+.rightside p{
+  font-size: 25px;
+  color: #0ED2F7;
+  margin-bottom: 20px;
 }
 
-.header ul li:hover {
-  background-color: #fff;
+.rightside ul{
+  width: 18vw;
+  height: 30vh;
+  border: solid 1px #0ED2F7;
 }
 
-.header ul{
-  padding: 0;
-  width: 295px;
+.rightside ul li{
+  padding: 0.5em;
 }
 
-.header ul li a{
-  display: block;
-  color: skyblue;
-  font-size:30px;
-  text-decoration:none /*リンクの下線を消す*/
+.rightside ul li a{
+  font-size: 18px;
+  color: #0ED2F7;
 }
-
-.header ul, ol{
-  padding: 0;
-  width: auto;
 }
-
-/*---------------メインロゴの設定-----------------*/
-a.mainlogo img{
-  min-width: 270px;
-  border:double 10px skyblue;
-  transition:all 0.5s ease; /*0.5秒かけて要素を変化させる*/
-  margin-bottom: 0.5em;
-}
-
-a.mainlogo:hover img{
-  border:double 10px #fff;
-}
-
-}
+/*------------------ロゴ------------------*/

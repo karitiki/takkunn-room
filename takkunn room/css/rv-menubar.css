@@ -5,7 +5,12 @@ ul{
     list-style-type: none!important;/*ポチ消す*/
 }
 
+hr{
+  color: #0ED2F7;
+}
+
 /*-----------枠線部分----------*/
+
 .menubar ul{
   padding: 0;
   width: 350px;
@@ -16,38 +21,51 @@ ul{
   display: inline-block;
   width: 40%;
 }
+
 .menubar ul li a{
-  color: skyblue;
-  font-size:28px;
+  display: block;
+  color: #0ED2F7;
+  font-size:30px;
   padding-left: 0.2em;
-  border-left: solid 5px skyblue;
+  margin-top: 5px;
+  border-left: solid 5px #0ED2F7;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all  0.5s ease;
 }
+
 .menubar ul li a:hover{
   color: #fff;
-  background-color: skyblue;
+  background-color:  #1c92d2;;
 }
 /*-------------あかさたなの設定-----------*/
+.underbar {
+    border-left:solid 1px #0ED2F7;
+}
+
 .underbar ul li p{
+  font-size: 22px;
+  color: black;
   padding: 0.5em 1em;
-      margin: 2em 0;
+      margin: 1em 0;
       background: #fff8e8;
       border-left: solid 10px skyblue;
-
+      height: 100%;
 }
 .underbar ul{
-  padding: 0;
-  width: 500;
+    min-width: 270px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: solid 2px #0ED2F7;
+  border-right: solid 2px #0ED2F7;
+  width: 40vw;
 }
 
 
 /*--------------------作品名------------------------*/
 .underbar ul li a{
   font-size: calc(112.5% + 0.5vw);
-}
-.underbar ul li a:hover{
-
+  text-decoration: none
+    color: #0ED2F7;
 }
