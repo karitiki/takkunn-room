@@ -1,0 +1,171 @@
+
+/*ラベル、ラジオボタンを使っての実装メモ
+
+<input type="radio" id="a">
+<input type="radio" id="b">
+
+
+<label for "a"> </label>
+<label for "b"> </label>
+*/
+
+
+html{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+          	-ms-text-size-adjust: 100%;
+}
+
+body{
+ background: : #000000;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/*------------Viewport---------*/
+a img{
+  margin: auto;
+  width: 20vw; /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
+  min-width: 120px;
+  min-height: 50px;
+}
+
+
+@media screen and (min-width: 1080px){
+
+  nav{
+      width: 100%;
+      height: 40px;
+      border-top: 1px solid skyblue;
+      border-bottom: 1px solid skyblue;
+      overflow: hidden;
+
+  }
+  nav ul{
+      width: 80%; /*横幅の指定*/
+      margin-left: 20%;   /*左端から20%右側に動かす*/
+  }
+
+  nav li{
+      justify-content: center;
+      width: calc(25% - 2px); /*横幅の指定（線の分をマイナスする）*/
+      min-width: 65px;
+      border-left: 1px solid skyblue;  /*線を描く*/
+      text-align: center; /*文字を中央に*/
+
+      float: left;    /*左から並べる*/
+  }
+  nav li:last-child{
+      border-right: 1px solid skyblue;
+  }
+
+  nav ul li:hover{
+        transition: 0.5s;
+        background-color: #1c92d2;
+  }
+  /*radial-gradient(#1c92d2, #f2fcfe);*/
+
+  nav ul li a{
+    color: #0ED2F7;
+  }
+
+  nav ul li a{
+      display:　block;
+      text-decoration: none;
+      font-size: 110%;
+      letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+      font-weight: 40px;   /*文字の太さを調整*/
+      line-height: 40px;  /*行間の指定（ナビボタンの高さ指定）*/
+  }
+
+  nav ul li a:hover{
+      transition: 0.5s;   /*ホバー時の動きをなめらかにする*/
+      color: #fff;    /*文字色の変更*/
+  }
+
+}
+@media screen and (min-width: 1080px){
+
+
+/*------------indexのメインスタイルなど-----------*/
+.continer{
+  display: flex;
+  margin-top: 20px;
+}
+/*--------------中央の部分-----------------------*/
+.center{
+  margin-left: 4vw;
+}
+
+.center p{
+  color: #0ED2F7;
+  margin-bottom: 5px;
+  font-size: calc(25px + 0.5vw);
+}
+/*------------------右側の設定--------------------*/
+.leftside{
+  margin-left: 40px;
+}
+
+.leftside p{
+  color: #0ED2F7;
+  font-size: 30px;
+  margin-right: 2vw;
+}
+
+.leftside ul{
+  width: 20vw;
+  height: 30vh;
+  min-width: 270px;
+  min-height: 300px;
+  border: dotted 3px #0ED2F7;
+}
+
+.leftside ul li p{
+  font-size: 19px;
+  color: #0ED2F7;
+  margin-top: 0.5em;
+}
+
+.leftside ul li{
+  list-style-type: none!important;/*ポチ消す*/
+}
+
+.leftside a img{
+  min-width: 270px;
+
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+/*------------------右側の設定--------------------*/
+.rightside{
+    margin-left: 30px;
+}
+
+.rightside p{
+  font-size: 25px;
+  color: #0ED2F7;
+  margin-bottom: 20px;
+}
+
+.rightside ul{
+  width: 18vw;
+  height: 30vh;
+  border: solid 1px #0ED2F7;
+}
+
+.rightside ul li{
+  padding: 0.5em;
+}
+
+.rightside ul li a{
+  font-size: 18px;
+  color: #0ED2F7;
+}
+}
+/*------------------ロゴ------------------*/
