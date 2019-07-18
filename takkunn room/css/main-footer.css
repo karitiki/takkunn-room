@@ -1,0 +1,74 @@
+@media screen and (min-width: 1080px){
+
+footer{
+display: flex;
+flex-wrap: wrap;
+position: absolute;
+bottom: 0px;              /* 絶対位置指定(左0px,下0px) */
+width:100%;               /* 横の幅を100% */
+}
+
+.sub-footer{
+background-color: #344955;   /* 背景色(黒) */
+height: 100%;          /* 縦幅の指定100px */
+width: 100%;           /* 横の幅970px */
+}
+
+.sub-footer ul{
+  line-height: 1.2em;
+}
+
+.sub-footer ul h3{
+  font-size: 22px;
+  color: #0ED2F7;
+  flex-wrap: wrap;
+}
+.sub-footer ul h4{
+  font-size: 22px;
+  color: #0ED2F7;
+  flex-wrap: wrap;
+}
+
+.sub-footer ul p{
+  font-size: 18px;
+  color: #0ED2F7;
+  flex-wrap: wrap;
+}
+
+.sub-footer ul li{
+  display: inline-block;
+}
+
+}
+@media screen and (max-width: 1079px){
+  footer{
+    width: 100%;
+    background-color: #444;   /* 背景色(黒) */
+  }
+  .sub-footer{
+   width: 100%;
+  }
+
+  .sub-footer ul{
+    margin-bottom: 20px;
+  }
+
+  .sub-footer ul h3{
+    font-size: 22px;
+    color: #0ED2F7;
+    flex-wrap: wrap;
+  }
+
+  .sub-footer ul h4{
+    font-size: 22px;
+    color: #0ED2F7;
+    flex-wrap: wrap;
+  }
+
+  .sub-footer ul p{
+    line-height: 1.1em;
+    font-size: 18px;
+    color: #0ED2F7;
+    flex-wrap: wrap;
+  }
+}

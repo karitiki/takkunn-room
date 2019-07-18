@@ -1,3 +1,19 @@
 body {
-font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','メイリオ','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+font-family: Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif
+}
+
+body{
+  background-image: url("../img/footer_lodyas.png");
+
+  background-repeat:repeat;
+
+}
+
+
+/*
+body{
+  background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
 }
